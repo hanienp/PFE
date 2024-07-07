@@ -1,0 +1,46 @@
+// Time Loss Causes to Root Causes Mapping
+digraph {
+	"Loading Areas Placement" [label="Loading Areas Placement" color=lightgreen shape=box style=filled]
+	"Base maneuvering" [label="Base maneuvering" color=lightblue shape=box style=filled]
+	"Loading Areas Placement" -> "Base maneuvering"
+	"Crane blockages" [label="Crane blockages" color=lightblue shape=box style=filled]
+	"Loading Areas Placement" -> "Crane blockages"
+	"Base clogging" [label="Base clogging" color=lightblue shape=box style=filled]
+	"Loading Areas Placement" -> "Base clogging"
+	"Material Placement per Segment" [label="Material Placement per Segment" color=lightgreen shape=box style=filled]
+	Maintenance [label=Maintenance color=lightblue shape=box style=filled]
+	"Material Placement per Segment" -> Maintenance
+	"Material maneuvers" [label="Material maneuvers" color=lightblue shape=box style=filled]
+	"Material Placement per Segment" -> "Material maneuvers"
+	"Equipment dispersed between multiple areas" [label="Equipment dispersed between multiple areas" color=lightblue shape=box style=filled]
+	"Material Placement per Segment" -> "Equipment dispersed between multiple areas"
+	"Crane Loading Area" [label="Crane Loading Area" color=lightgreen shape=box style=filled]
+	"Crane waiting" [label="Crane waiting" color=lightblue shape=box style=filled]
+	"Crane Loading Area" -> "Crane waiting"
+	"Prepared Orders Storage" [label="Prepared Orders Storage" color=lightgreen shape=box style=filled]
+	"Administrative papers and authorizations" [label="Administrative papers and authorizations" color=lightblue shape=box style=filled]
+	"Prepared Orders Storage" -> "Administrative papers and authorizations"
+	"Material Preparation Scheduling" [label="Material Preparation Scheduling" color=lightgreen shape=box style=filled]
+	"Tool waiting" [label="Tool waiting" color=lightblue shape=box style=filled]
+	"Material Preparation Scheduling" -> "Tool waiting"
+	"Service planning delays" [label="Service planning delays" color=lightblue shape=box style=filled]
+	"Material Preparation Scheduling" -> "Service planning delays"
+	"Maintenance Placement and Process" [label="Maintenance Placement and Process" color=lightgreen shape=box style=filled]
+	Maintenance [label=Maintenance color=lightblue shape=box style=filled]
+	"Maintenance Placement and Process" -> Maintenance
+	"Scheduling Operation with Crane (Which Truck in Which Time)" [label="Scheduling Operation with Crane (Which Truck in Which Time)" color=lightgreen shape=box style=filled]
+	"Crane waiting" [label="Crane waiting" color=lightblue shape=box style=filled]
+	"Scheduling Operation with Crane (Which Truck in Which Time)" -> "Crane waiting"
+	"Scheduling Operation with Forklift" [label="Scheduling Operation with Forklift" color=lightgreen shape=box style=filled]
+	"Forklift waiting" [label="Forklift waiting" color=lightblue shape=box style=filled]
+	"Scheduling Operation with Forklift" -> "Forklift waiting"
+	"No In Time Preparation of Papers and Authorization" [label="No In Time Preparation of Papers and Authorization" color=lightgreen shape=box style=filled]
+	"Administrative papers and authorizations" [label="Administrative papers and authorizations" color=lightblue shape=box style=filled]
+	"No In Time Preparation of Papers and Authorization" -> "Administrative papers and authorizations"
+	"No Full Mastery/Awareness of the Operation’s Needs" [label="No Full Mastery/Awareness of the Operation’s Needs" color=lightgreen shape=box style=filled]
+	"Coordination segment-drivers" [label="Coordination segment-drivers" color=lightblue shape=box style=filled]
+	"No Full Mastery/Awareness of the Operation’s Needs" -> "Coordination segment-drivers"
+	"No Visibility Beforehand on the Details of the Operation (Material and Place)" [label="No Visibility Beforehand on the Details of the Operation (Material and Place)" color=lightgreen shape=box style=filled]
+	"Coordination segment-drivers" [label="Coordination segment-drivers" color=lightblue shape=box style=filled]
+	"No Visibility Beforehand on the Details of the Operation (Material and Place)" -> "Coordination segment-drivers"
+}
